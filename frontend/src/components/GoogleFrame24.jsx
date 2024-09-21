@@ -2,13 +2,13 @@ import React from "react";
 import "../style.css";
 
 
-export const WireframingEmail = () => {
+export const GoogleFrame = ({ onClick }) => {
   return (
-    <div className="BoxGoogle">
-    <img className="googleLogo" src="" />
-    <div style="color: #8A8A8A; font-size: 13px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Google</div>
-</div>
+    <button className="BoxGoogle" onClick={onClick}>
+      <img className="googleLogo" src="/Users/ishanpathak/Desktop/agrofrontend/frontend/src/Assets/googleLogo.svg" alt="Google Logo" /> 
+      <div className="googleText">Google</div>
+    </button>
   );
 };
 
-export default WireframingEmail;
+export default GoogleFrame;
